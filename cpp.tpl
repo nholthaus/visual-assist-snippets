@@ -91,6 +91,8 @@ a:#ifdef guard in a header::
 #ifndef $FILE_BASE$_h__
 #define $FILE_BASE$_h__
 
+#pragma once
+
 $selected$
 #endif // $FILE_BASE$_h__
 
@@ -183,6 +185,8 @@ protected:
 
 };
 
+a:class:cla:
+class 
 a::class:
 class $end$
 {
@@ -377,6 +381,10 @@ a:NULL:N:
 NULL
 a:nullptr:n:
 nullptr
+a:public:pu:
+public
+a:reinterpret_cast:rein:
+reinterpret_cast<$end$>($selected$)
 a::r:
 return
 a:return false;:rf:
@@ -429,6 +437,12 @@ switch ($end$)
 
 a::TC:
 TCHAR
+a:TEST_F:TE:
+TEST_F($fixture$,$test$)
+{
+	$selection$$end$
+	ADD_FAILURE();
+}
 a:try { ... } catch {} catch {} catch {}:try:
 try
 {
